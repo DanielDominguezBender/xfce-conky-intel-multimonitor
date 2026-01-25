@@ -20,12 +20,14 @@ This project documents not only the final solution, but also a **real-world wind
 ### Original behavior (issue)
 Conky stayed **above application windows**, covering terminal and browser text.
 
-![Original Overlay](screenshots/original-overlay.png)
+![Original Overlay](screenshots/original_overlay.png)
 
 ### Fixed behavior (final)
 Conky stays on the **desktop layer**, always behind applications.
 
-![Fixed Behavior](screenshots/fixed-behind-windows.png)
+![Fixed Behavior](screenshots/fixed_overlay1.png)
+
+![Fixed Behavior](screenshots/fixed_overlay2.png)
 
 ---
 
