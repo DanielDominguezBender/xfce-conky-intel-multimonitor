@@ -10,7 +10,7 @@ This project documents not only the final solution, but also a **real-world wind
 - RAM usage (real-time)
 - Intel integrated GPU monitoring (Sandy Bridge compatible)
 - Live network traffic
-- Multi-monitor support (Xinerama)
+- Multi-monitor support (Xinerama) [not yet]
 - Arc-Dark friendly colors
 - Click-safe and focus-safe behavior
 
