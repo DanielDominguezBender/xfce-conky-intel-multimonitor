@@ -74,7 +74,7 @@ sudo apt install conky-all intel-gpu-tools
 ## 🚀 Installation
 
 ```lua
-git clone https://github.com/YOURUSER/xfce-conky-intel-multimonitor.git
+git clone https://github.com/DanielDominguezBender/xfce-conky-intel-multimonitor.git
 mkdir -p ~/.config/conky
 cp conky/conky-fixed.conf ~/.config/conky/conky.conf
 ```
