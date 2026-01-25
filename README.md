@@ -1,10 +1,8 @@
-# XFCE + Conky (Intel GPU, Multi-Monitor)
+# XFCE + Conky (Intel GPU)
 
-Minimal and lightweight **Conky setup for XFCE**, designed for
-older Intel-based laptops and multi-monitor environments.
+Minimal and lightweight **Conky setup for XFCE**, designed for older Intel-based laptops.
 
-This project documents not only the final solution, but also
-a **real-world window stacking issue** and how it was solved.
+This project documents not only the final solution, but also a **real-world window stacking issue** and how it was solved.
 
 ---
 
