@@ -40,8 +40,8 @@ own_window_type = 'dock'
 ```
 
 This ensured Conky never disappeared, but caused it to:
--Stay above all windows
--Obscure terminal and browser content
+- Stay above all windows
+- Obscure terminal and browser content
 This behavior is expected in XFCE, as dock windows are stacked above
 normal application windows.
 
@@ -83,9 +83,9 @@ sh -c "sleep 10 && conky -c ~/.config/conky/conky.conf"
 
 ## 🧪 Tested on
 
--Ubuntu + XFCE
-Intel Sandy Bridge GPU
--Arc-Dark theme
+- Ubuntu+XFCE
+- Intel Sandy Bridge GPU
+- Arc-Dark theme
 
 ## 🚀 Future improvements
 
