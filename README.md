@@ -7,6 +7,7 @@ This project documents not only the final solution, but also a **real-world wind
 ---
 
 ## ✨ Features
+
 - RAM usage (real-time)
 - Intel integrated GPU monitoring (Sandy Bridge compatible)
 - Live network traffic
@@ -65,11 +66,13 @@ This achieves:
 This approach proved to be the most reliable balance in XFCE.
 
 ## 🧰 Requirements
+
 ```lua
 sudo apt install conky-all intel-gpu-tools
 ```
 
 ## 🚀 Installation
+
 ```lua
 git clone https://github.com/YOURUSER/xfce-conky-intel-multimonitor.git
 mkdir -p ~/.config/conky
@@ -77,9 +80,18 @@ cp conky/conky-fixed.conf ~/.config/conky/conky.conf
 ```
 
 ## 🔄 XFCE Autostart
+
 ```lua
 sh -c "sleep 10 && conky -c ~/.config/conky/conky.conf"
 ```
+
+> [!TIP]
+> Remember to kill and reload the process after making any change on the file to asure you see the updates you are doing
+> ```lua
+> killall conky
+> conky -c ~/.config/conky/conky.conf
+> ```
+
 
 ## 🧪 Tested on
 
