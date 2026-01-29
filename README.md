@@ -79,11 +79,12 @@ mkdir -p ~/.config/conky
 cp conky/conky-fixed.conf ~/.config/conky/conky.conf
 ```
 
-## 🔄 XFCE Autostart
+## 🔄 Launch widget
 
 ```lua
 sh -c "sleep 10 && conky -c ~/.config/conky/conky.conf"
 ```
+
 
 > [!TIP]
 > Remember to kill and reload the process after making any change on the file to asure you see the updates you are doing
@@ -92,6 +93,51 @@ sh -c "sleep 10 && conky -c ~/.config/conky/conky.conf"
 > conky -c ~/.config/conky/conky.conf
 > ```
 
+## 🔁 Autostart widget
+
+To make the widget start on log-in, create following script:
+	
+Go to the location were you want to have the script.
+	
+I have created a folder called "scripts" under "Documents".
+	
+
+```terminal	
+sudo nano launch_widget.sh
+```
+	
+And added following lines.
+	
+```bash
+#!/bin/sh
+sleep 10
+	
+conky -c /home/USER/.config/conky/conky.conf	
+```
+	
+> [!Note]
+> Remember to change the PATH to the location you have the conky file (change user if the path is similar).
+
+Why those 10 secs? To give XFCE to load all needed resources (my MacBook Pro is from 2011, give it some time to load properly XD).
+  
+Afterwards make the script executable:
+		
+```terminal
+chmod +x launch_widget.sh
+```
+
+Go to "Session and Statup" to create the "autolaunch" option.
+
+- Settings → Session and Startup → Application Autostart
+
+Add a new entry:
+
+- Name: I called it "conky_script"
+- Description: Start Conky widget on XFCE login
+- Command: /home/dani/Documents/scripts/launch_widget.sh
+- Trigger: on login
+
+Now you just need to log out and log in again, or restart your computer.
 
 ## 🧪 Tested on
 
